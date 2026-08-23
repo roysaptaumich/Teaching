@@ -10,8 +10,10 @@ title: SDS 8102 - Advanced Mathematical Statistics
 Department of Statistics and Data Science  
 Mohamed bin Zayed University of Artificial Intelligence
 
-**Instructor:** Saptarshi Roy  
+**Instructor:** Saptarshi Roy
+**Teaching Assistant:** Zinyu Zhou
 **Lectures:** Tuesday & Thursday (1:00 pm - 2:30 pm)  
+**Labs:** Friday (2:00pm - 3:30pm)
 **Semester:** Fall 2026
 
 ---
@@ -24,7 +26,7 @@ testing, asymptotic theory, and empirical processes.
 
 ## Course Materials
 
-- [Syllabus](syllabus.md)
+- [Syllabus](syllabus.pdf)
 - [Course Schedule](schedule.md)
 - [Homework](homework.md)
 - [Lecture Slides](#lecture-slides)

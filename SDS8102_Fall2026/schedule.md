@@ -1,0 +1,22 @@
+# Teaching Schedule
+The course will roughly follow the following teaching plan:
+
+| Week | Date | Covered Material | Special Comments |
+|:---:|---|---|---|
+| **1** | Aug. 24–28 | Statistical Thinking; Sample vs. Population; Parametric & Non-parametric Models; Sufficiency & Completeness; Exponential Families; Decision Theory | **No Lab Aug. 28** (Prophet Mohammed Birthday) |
+| **2** | Aug. 31–Sep. 4 | Point Estimation; Method of Moments (MoM); M/Z Estimators; MLE Approach; Connections to KL Divergence and Hellinger Distance; EM Algorithm | |
+| **3** | Sep. 7–11 | Hypothesis Testing; UMP Tests; Neyman–Pearson Lemma; Likelihood Ratio Tests (LRT); Monotone Likelihood Ratio Tests; Confidence Bounds, Intervals & Regions | **HW1 due** |
+| **4** | Sep. 14–18 | Loss & Risk; Bayesian Procedures; Minimax Procedures; Unbiased Estimation; Cramér–Rao Bound; Local Properties of KL Divergence | |
+| **5** | Sep. 21–25 | Stochastic Convergence; Characteristic Functions; Almost Sure Convergence; Weak Convergence; Borel–Cantelli Lemma; 0–1 Law; Law of the Iterated Logarithm | **HW2 due** |
+| **6** | Sep. 28–Oct. 2 | Empirical Processes; Glivenko–Cantelli Classes and Theorem; Donsker Classes; Chaining Argument | |
+| **7** | Oct. 5–9 | Asymptotic Properties of Estimators; Consistency of M/Z Estimators; Applications to MLE | |
+| **—** | **Oct. 12–16** | **No classes** | **Midterm Week**; Fall Break: Oct. 15–16 |
+| **8** | Oct. 19–23 | Efficiency of Statistical Tests; Asymptotic Power Function; Asymptotic Relative Efficiency (ARE); Asymptotically Uniformly Most Powerful Tests; Asymptotic Representation Theorem; Local Asymptotic Normality; Wald's and Rao's Large-Sample Tests | **HW3 due** |
+| **9** | Oct. 26–30 | Goodness-of-Fit Tests; Kolmogorov–Smirnov Test & Extensions; Pearson's Chi-Squared Test; Neyman's Smooth Test | **No class Oct. 29** (Research Showcase) |
+| **10** | Nov. 2–6 | [Topic 10] | |
+| **11** | Nov. 9–13 | [Topic 11] | |
+| **12** | Nov. 16–20 | [Topic 12] | **HW4 due** |
+| **13** | Nov. 23–27 | [Topic 13] | |
+| **14** | Nov. 30–Dec. 4 | [Topic 14] | **No class Dec. 1** (UAE National Day) |
+| **15** | Dec. 7–11 | Review / Problem Practice | Last day of classes: Dec. 10 |
+| **16** | Dec. 15 | **Final Exam** | |
