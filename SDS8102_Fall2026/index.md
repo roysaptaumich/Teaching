@@ -3,11 +3,11 @@ layout: home
 title: SDS 8102 - Advanced Mathematical Statistics
 ---
 
-# Advanced Mathematical Statistics
+# SDS 8102: Advanced Mathematical Statistics
 
 **Fall 2026**
 
-Statistics and Data Science Program
+Statistics and Data Science Program\
 Mohamed bin Zayed University of Artificial Intelligence
 
 **Instructor:** Saptarshi Roy
