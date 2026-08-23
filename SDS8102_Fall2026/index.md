@@ -16,7 +16,7 @@ Mohamed bin Zayed University of Artificial Intelligence
 
 **Lectures:** Tuesday & Thursday (1:00 pm - 2:30 pm)  
 
-**Labs:** Friday (2:00pm - 3:30pm)
+**Labs:** Friday (2:00pm - 3:50pm)
 
 **Semester:** Fall 2026
 
