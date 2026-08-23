@@ -3,7 +3,7 @@ layout: home
 title: SDS 8102 - Advanced Mathematical Statistics
 ---
 
-# Mathematical Statistics
+# Advanced Mathematical Statistics
 
 **Fall 2026**
 
