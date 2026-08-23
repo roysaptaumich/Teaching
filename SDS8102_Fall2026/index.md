@@ -11,9 +11,13 @@ Statistics and Data Science Program
 Mohamed bin Zayed University of Artificial Intelligence
 
 **Instructor:** Saptarshi Roy
+
 **Teaching Assistant:** Zinyu Zhou
+
 **Lectures:** Tuesday & Thursday (1:00 pm - 2:30 pm)  
+
 **Labs:** Friday (2:00pm - 3:30pm)
+
 **Semester:** Fall 2026
 
 ---
