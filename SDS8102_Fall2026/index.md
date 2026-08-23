@@ -12,7 +12,7 @@ Mohamed bin Zayed University of Artificial Intelligence
 
 **Instructor:** Saptarshi Roy
 
-**Teaching Assistant:** Zinyu Zhou
+**Teaching Assistant:** Ziyun Zhou
 
 **Lectures:** Tuesday & Thursday (1:00 pm - 2:30 pm)  
 
