@@ -31,13 +31,12 @@ testing, asymptotic theory, and empirical processes.
 ## Course Materials
 
 - [Syllabus](syllabus.pdf)
-- [Course Schedule](schedule.md)
 - [Homework](homework.md)
 - [Lecture Slides](#lecture-slides)
 
 ## Teaching Plan
 
-The course will roughly follow the following teaching plan:
+The course will roughly adhere to the following teaching plan:
 
 | Week | Date | Covered Material | Special Comments |
 |:---:|---|---|---|
