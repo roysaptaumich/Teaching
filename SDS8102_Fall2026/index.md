@@ -32,7 +32,7 @@ testing, asymptotic theory, and empirical processes.
 
 - [Syllabus](syllabus.pdf)
 - [Homework](homework.md)
-- [Lecture Slides](#lecture-slides)
+- [Lecture Notes](#Notes)
 
 ## Teaching Plan
 
