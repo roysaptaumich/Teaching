@@ -31,7 +31,7 @@ testing, asymptotic theory, and empirical processes.
 ## Course Materials
 
 - [Syllabus](syllabus.pdf)
-- [Homework](homework.md)
+- [Homeworks](homework.md)
 - [Academic poliy](https://mbzuaiac.sharepoint.com/sites/GraduateAcademicPolicies/SitePages/Home.aspx?csf=1&web=1&share=EXB6Mo-9XH9Ii87PW_hZeskBNvvejCqJbctKr0Fg0GwJJA&e=zze1bM&CID=a5c6075d-ff4b-4ab0-84d3-d0b8fce7b31e)
 
 ## Teaching Plan
