@@ -52,7 +52,7 @@ The course will roughly adhere to the following teaching plan:
 | **9** | Oct. 26–30 | Goodness-of-Fit Tests; Kolmogorov–Smirnov Test & Extensions; Pearson's Chi-Squared Test; Neyman's Smooth Test | **No class Oct. 29** (Research Showcase) | TBD |
 | **10** | Nov. 2–6 | Bootsrap and Sub-sampling; Permutation and Randomization test; Asymptotic results; Basic large sample approximations; Bootstrap sampling distributions; Higher-order correctness | | TBD |
 | **11** | Nov. 9–13 | Non-parametric Statistics: Kernel density estimation;  Mean-squared error of kernel estimators; Lack of asymptotic optimality; Fourier analysis of KDE | | TBD |
-| **12** | Nov. 16–20 | Non-parametric regression: The Nadarya-Watson estimator; Local polynomial estimators: Pointwise and integrated risk of local polynomial estimators; Convergence in sup-norm; Sobolev Classes  | **HW4 due** | TBD |
+| **12** | Nov. 16–20 | Non-parametric regression: The Nadaraya-Watson estimator; Local polynomial estimators: Pointwise and integrated risk of local polynomial estimators; Convergence in sup-norm; Sobolev Classes  | **HW4 due** | TBD |
 | **13** | Nov. 23–27 | Lower bound on minimax risk 1: Introduction; general reduction scheme; Lower bound based on two hypotheses; Bound based on distances between probability measures | | TBD |
 | **14** | Nov. 30–Dec. 4 | Lower bound on minimax risk 2: Bounds based on many hypotheses; Lower bounds in L2; Lower bounds on sup-norm; Other tools for minimax lower bound: Fano's lemma, Assouad's lemma, The van Trees inequality; The method of two fuzzy hypotheses; Lower bounds for quadratic functionals | **No class Dec. 1** (UAE National Day) | TBD |
 | **15** | Dec. 7–11 | Review / Problem Practice | Last day of classes: Dec. 10 | TBD |
