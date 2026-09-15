@@ -1,3 +1,4 @@
 # SDS 8102: Homeworks and solutions files
-[HW1](homeworks/HW1.pdf); [HW1_Solution](homeworks/HW1_solutions.pdf)
-[HW2](homeworks/HW2.pdf); [HW2_Solution]
+- [HW1](homeworks/HW1.pdf); [HW1_Solution](homeworks/HW1_solutions.pdf)
+- [HW2](homeworks/HW2.pdf); [HW2_Solution]
+
