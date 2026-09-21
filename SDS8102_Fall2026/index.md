@@ -44,7 +44,7 @@ The course will roughly adhere to the following teaching plan:
 | **2** | Aug. 31–Sep. 4 | Point Estimation; Method of Moments (MoM); M/Z Estimators; MLE Approach; Connections to KL Divergence and Hellinger Distance; EM Algorithm | | [Notes1](Notes/Week2/Notes1.pdf); [Notes2](Notes/Week2/Notes2.pdf) |
 | **3** | Sep. 7–11 | Hypothesis Testing; UMP Tests; Neyman–Pearson Lemma; Likelihood Ratio Tests (LRT); Monotone Likelihood Ratio Tests; Confidence Bounds, Intervals & Regions | [**HW1 due**](homeworks/HW1.pdf); [**Solution**](homeworks/HW1_solutions.pdf) | [Notes1](Notes/Week3/Notes1.pdf); [Notes2](Notes/Week3/Notes2.pdf) |
 | **4** | Sep. 14–18 | Loss & Risk; Bayesian Procedures; Minimax Procedures; Unbiased Estimation; Cramér–Rao Bound; Local Properties of KL Divergence | | [Notes1](Notes/Week4/Notes1.pdf); [Notes2](Notes/Week4/Notes2.pdf) |
-| **5** | Sep. 21–25 | Stochastic Convergence; Characteristic Functions; Almost Sure Convergence; Weak Convergence; Borel–Cantelli Lemma; 0–1 Law; Law of the Iterated Logarithm | [**HW2 due**](homeworks/HW2.pdf) | TBD |
+| **5** | Sep. 21–25 | Stochastic Convergence; Characteristic Functions; Almost Sure Convergence; Weak Convergence; Borel–Cantelli Lemma; 0–1 Law; Law of the Iterated Logarithm | [**HW2 due**](homeworks/HW2.pdf) | [Notes1](Notes/Week5/Notes2.pdf) |
 | **6** | Sep. 28–Oct. 2 | Empirical Processes; Glivenko–Cantelli Classes and Theorem; Donsker Classes; Chaining Argument | | TBD |
 | **7** | Oct. 5–9 | Asymptotic Properties of Estimators; Consistency of M/Z Estimators; Applications to MLE | | TBD |
 | **—** | **Oct. 12–16** | **Oct 13: Mid-term exam** | **Midterm Week**; Fall Break: Oct. 15–16 | |
