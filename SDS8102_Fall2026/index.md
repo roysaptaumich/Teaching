@@ -47,7 +47,7 @@ The course will roughly adhere to the following teaching plan:
 | **5** | Sep. 21–25 | Stochastic Convergence; Characteristic Functions; Almost Sure Convergence; Weak Convergence; Borel–Cantelli Lemma; 0–1 Law; Law of the Iterated Logarithm | [**HW2 due**](homeworks/HW2.pdf) | [SLLN notes](Notes/Week5/almost_sure_conv.pdf); [Weak convergence](Notes/Week5/weak_conv.pdf); [Notes1](Notes/Week5/Notes1.pdf) |
 | **6** | Sep. 28–Oct. 2 | Empirical Processes; Glivenko–Cantelli Classes and Theorem; Donsker Classes; Chaining Argument | | TBD |
 | **7** | Oct. 5–9 | Asymptotic Properties of Estimators; Consistency of M/Z Estimators; Applications to MLE | | TBD |
-| **—** | **Oct. 12–16** | **Oct 13: Mid-term exam** (Syllabus: Upto Week 6) | **Midterm Week**; Fall Break: Oct. 15–16 | |
+| **—** | **Oct. 12–16** | **Oct 13: Mid-term exam (Syllabus: Upto Week 6)**  | **Midterm Week**; Fall Break: Oct. 15–16 | |
 | **8** | Oct. 19–23 | Efficiency of Statistical Tests; Asymptotic Power Function; Asymptotic Relative Efficiency (ARE); Asymptotically Uniformly Most Powerful Tests; Asymptotic Representation Theorem; Local Asymptotic Normality; Wald's and Rao's Large-Sample Tests | **HW3 due** | TBD |
 | **9** | Oct. 26–30 | Goodness-of-Fit Tests; Kolmogorov–Smirnov Test & Extensions; Pearson's Chi-Squared Test; Neyman's Smooth Test | **No class Oct. 29** (Research Showcase) | TBD |
 | **10** | Nov. 2–6 | Bootsrap and Sub-sampling; Permutation and Randomization test; Asymptotic results; Basic large sample approximations; Bootstrap sampling distributions; Higher-order correctness | | TBD |
