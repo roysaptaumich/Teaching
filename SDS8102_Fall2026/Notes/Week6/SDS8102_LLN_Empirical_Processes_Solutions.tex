@@ -1,0 +1,519 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SDS 8102: Advanced Mathematical Statistics
+%% Solutions: Laws of Large Numbers and Empirical Processes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tcolorbox}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{MBZBlue}{HTML}{123B5D}
+\definecolor{MBZTeal}{HTML}{00A6A6}
+\definecolor{MBZLightBlue}{HTML}{EAF4F7}
+\definecolor{MBZGold}{HTML}{D6A84B}
+\definecolor{MBZGray}{HTML}{5F6B73}
+\definecolor{MBZLightGray}{HTML}{F4F6F7}
+
+\newcommand{\bbE}{\mathbb{E}}
+\newcommand{\bbP}{\mathbb{P}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\ind}{\mathbf{1}}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\Norm}{\lVert}{\rVert}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\card}{card}
+
+\pagestyle{fancy}
+\setlength{\headheight}{24pt}
+\fancyhf{}
+\fancyhead[L]{\textcolor{MBZBlue}{\textbf{SDS 8102}}}
+\fancyhead[R]{\textcolor{MBZGray}{Solution Key}}
+\fancyfoot[C]{\textcolor{MBZGray}{\thepage}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\headrule}{%
+  \hbox to\headwidth{\color{MBZTeal}\leaders\hrule height \headrulewidth\hfill}}
+
+\titleformat{\section}{\Large\bfseries\color{MBZBlue}}{\thesection}{0.75em}{}
+\titlespacing*{\section}{0pt}{1.5em}{0.8em}
+\setlist[enumerate,1]{label=\textcolor{MBZBlue}{\textbf{\arabic*.}},leftmargin=*,itemsep=1em}
+\setlist[enumerate,2]{label=\textcolor{MBZTeal}{\textbf{(\alph*)}},leftmargin=*,itemsep=0.6em}
+
+\newtcolorbox{solutionbox}{
+  colback=MBZLightBlue,colframe=MBZTeal,boxrule=0.8pt,arc=2mm,
+  left=3mm,right=3mm,top=2mm,bottom=2mm}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+
+\begin{document}
+
+\begin{center}
+{\color{MBZBlue}\rule{\textwidth}{1.2pt}}
+
+\vspace{0.6em}
+{\LARGE\bfseries\color{MBZBlue}SDS 8102: Advanced Mathematical Statistics}
+
+\vspace{0.5em}
+{\Large\bfseries\color{MBZTeal}Solution Key: Laws of Large Numbers \& Empirical Processes}
+
+\vspace{0.4em}
+{\large Fall 2026}
+
+\vspace{0.2em}
+{\large Mohamed bin Zayed University of Artificial Intelligence}
+
+\vspace{0.6em}
+{\color{MBZBlue}\rule{\textwidth}{1.2pt}}
+\end{center}
+
+\section{A Heavy-Tailed Moving-Average Process}
+
+Let $m=\bbE[Y_t]$.
+
+\begin{enumerate}
+\item The Pareto density is
+\[
+f(y)=\alpha y^{-\alpha-1}\ind\{y\geq1\}.
+\]
+Thus
+\[
+\bbE[Y_t]
+=\alpha\int_1^\infty y^{-\alpha}\,dy
+=\frac{\alpha}{\alpha-1},
+\]
+whereas
+\[
+\bbE[Y_t^2]
+=\alpha\int_1^\infty y^{1-\alpha}\,dy
+=\infty
+\]
+because $\alpha<2$. Hence $\bbE[\varepsilon_t]=0$, and
+\[
+\bbE\abs{\varepsilon_t}
+\leq \bbE[Y_t]+m<\infty.
+\]
+Moreover, if $Y_t\geq2m$, then $(Y_t-m)^2\geq Y_t^2/4$, so
+\[
+\bbE[\varepsilon_t^2]
+\geq \frac14\bbE\left[Y_t^2\ind\{Y_t\geq2m\}\right]
+=\infty.
+\]
+
+\item Linearity and the triangle inequality give
+\[
+\bbE[X_t]=0,
+\qquad
+\bbE\abs{X_t}
+\leq(1+\abs{\rho})\bbE\abs{\varepsilon_0}<\infty.
+\]
+To verify the second moment carefully, choose $K>0$ such that
+$\bbP(\abs{\rho\varepsilon_{t-1}}\leq K)>0$. By independence,
+\[
+\begin{aligned}
+\bbE[X_t^2]
+&\geq
+\bbE\left[(\varepsilon_t+\rho\varepsilon_{t-1})^2
+\ind\{\abs{\rho\varepsilon_{t-1}}\leq K,\ \abs{\varepsilon_t}>2K\}\right]\\
+&\geq
+\frac14\bbP(\abs{\rho\varepsilon_{t-1}}\leq K)
+\bbE\left[\varepsilon_t^2\ind\{\abs{\varepsilon_t}>2K\}\right]
+=\infty.
+\end{aligned}
+\]
+
+\item $X_t$ is measurable with respect to
+$\sigma(\varepsilon_t,\varepsilon_{t-1})$. If $\abs{t-s}>1$, the
+two corresponding pairs of innovations are disjoint and hence independent.
+Therefore $X_t$ and $X_s$ are independent.
+
+\item Expanding and shifting indices,
+\[
+\begin{aligned}
+\sum_{t=1}^nX_t
+&=\sum_{t=1}^n\varepsilon_t
++\rho\sum_{t=1}^n\varepsilon_{t-1}\\
+&=(1+\rho)\sum_{t=1}^{n-1}\varepsilon_t
++\varepsilon_n+\rho\varepsilon_0.
+\end{aligned}
+\]
+
+\item Since the innovations are i.i.d., integrable, and mean zero, the SLLN gives
+\[
+\frac1n\sum_{t=1}^{n-1}\varepsilon_t\longrightarrow0
+\qquad\text{a.s.}
+\]
+Writing $S_n=\sum_{t=1}^n\varepsilon_t$,
+\[
+\frac{\varepsilon_n}{n}
+=\frac{S_n}{n}-\frac{n-1}{n}\frac{S_{n-1}}{n-1}\longrightarrow0
+\qquad\text{a.s.}
+\]
+Also $\rho\varepsilon_0/n\to0$ a.s.
+
+\item Dividing the identity in part 4 by (n) and applying part 5 yields
+\[
+\boxed{\frac1n\sum_{t=1}^nX_t\longrightarrow0\quad\text{a.s.}}
+\]
+Although $X_t$ has infinite variance, the proof only needs integrability of
+the underlying i.i.d. innovations. A finite-variance version of the SLLN is
+therefore not directly applicable to $X_t$.
+\end{enumerate}
+
+\section{The Classical Coupon-Collector Problem}
+
+\begin{enumerate}
+\item The time spent moving from (k-1) observed coupon types to (k)
+types is $W_{k,n}=\tau_k-\tau_{k-1}$. The increments telescope:
+\[
+\sum_{k=1}^nW_{k,n}=\tau_n-\tau_0=T_n.
+\]
+
+\item After (k-1) distinct types have appeared, (n-k+1) types remain.
+Thus
+\[
+p_{k,n}=\frac{n-k+1}{n},
+\qquad
+W_{k,n}\sim\operatorname{Geom}(p_{k,n}).
+\]
+
+\item By independence and the mean of a geometric variable,
+\[
+\bbE[T_n]
+=\sum_{k=1}^n\frac1{p_{k,n}}
+=n\sum_{j=1}^n\frac1j
+=nH_n.
+\]
+Since $H_n/\log n\to1$,
+\[
+\frac{\bbE[T_n]}{n\log n}\longrightarrow1.
+\]
+
+\item With $j=n-k+1$,
+\[
+\begin{aligned}
+\Var(T_n)
+&=\sum_{k=1}^n\frac{1-p_{k,n}}{p_{k,n}^2}\\
+&=\sum_{j=1}^n\frac{1-j/n}{(j/n)^2}
+\leq n^2\sum_{j=1}^n\frac1{j^2}
+\leq\frac{\pi^2}{6}n^2.
+\end{aligned}
+\]
+
+\item Consequently,
+\[
+\Var\left(\frac{T_n}{n\log n}\right)
+\leq\frac{\pi^2}{6\log^2n}\longrightarrow0.
+\]
+For every $\varepsilon>0$, Chebyshev's inequality gives
+\[
+\bbP\left(
+\abs{\frac{T_n-\bbE[T_n]}{n\log n}}>\varepsilon
+\right)
+\leq\frac{\pi^2}{6\varepsilon^2\log^2n}\longrightarrow0.
+\]
+
+\item Decompose
+\[
+\frac{T_n}{n\log n}
+=\frac{T_n-\bbE[T_n]}{n\log n}
++\frac{\bbE[T_n]}{n\log n}.
+\]
+The first term converges to zero in probability and the second to one.
+Therefore
+\[
+\boxed{\frac{T_n}{n\log n}\longrightarrow1\quad\text{in probability}.}
+\]
+Thus the collection time is asymptotically $n\log n$ on its natural
+first-order scale.
+\end{enumerate}
+
+\section{A Two-Series Theorem for Positive Random Variables}
+
+Fix $c>0$ and put $W_n=V_n\ind\{V_n\leq c\}$. Kolmogorov's
+three-series theorem says that $\sum_nV_n$ converges a.s. if and only if
+\[
+\sum_n\bbP(V_n>c)<\infty,
+\qquad
+\sum_n\bbE[W_n]\ \text{converges},
+\qquad
+\sum_n\Var(W_n)<\infty.
+\]
+Because $W_n\geq0$, convergence of the second series is exactly
+$\sum_n\bbE[W_n]<\infty$. Furthermore,
+\[
+\Var(W_n)\leq\bbE[W_n^2]\leq c\,\bbE[W_n].
+\]
+Hence the variance series follows automatically from the expectation series.
+The three-series criterion therefore reduces to
+\[
+\boxed{
+\sum_nV_n<\infty\ \text{a.s.}
+\iff
+\sum_n\bbP(V_n>c)<\infty
+\ \text{and}\ 
+\sum_n\bbE[V_n\ind\{V_n\leq c\}]<\infty.}
+\]
+
+\section{Equivalent Criteria for Summability}
+
+For every $x\geq0$,
+\[
+\frac12\min\{x,1\}
+\leq\frac{x}{1+x}
+\leq\min\{x,1\}.
+\]
+Indeed, consider separately $0\leq x\leq1$ and $x>1$. Taking
+expectations and summing shows immediately that
+\[
+\sum_n\bbE\left[\frac{X_n}{1+X_n}\right]<\infty
+\iff
+\sum_n\bbE[\min\{X_n,1\}]<\infty.
+\]
+
+If the latter holds, Tonelli's theorem gives
+\[
+\bbE\left[\sum_n\min\{X_n,1\}\right]<\infty,
+\]
+so $\sum_n\min\{X_n,1\}<\infty$ a.s. In particular, $X_n>1$
+occurs only finitely often, and hence
+\[
+\sum_nX_n<\infty\qquad\text{a.s.}
+\]
+Conversely, if $\sum_nX_n<\infty$ a.s., the two-series result with
+$c=1$ yields
+\[
+\sum_n\bbE[X_n\ind\{X_n\leq1\}]<\infty,
+\qquad
+\sum_n\bbP(X_n>1)<\infty.
+\]
+Since
+\[
+\bbE[\min\{X_n,1\}]
+=\bbE[X_n\ind\{X_n\leq1\}]+\bbP(X_n>1),
+\]
+condition (iii) follows. Thus (i), (ii), and (iii) are equivalent.
+
+\section{The Strong Law and \(L^1\) Convergence}
+
+Let $\mu=\bbE[X_1]$. Since $X_1\in L^1$, the de la
+Vall\'ee--Poussin criterion provides an increasing convex function
+$\Phi:[0,\infty)\to[0,\infty)$ such that
+\[
+\frac{\Phi(t)}{t}\longrightarrow\infty,
+\qquad
+\bbE\Phi(\abs{X_1})<\infty.
+\]
+By convexity and Jensen's inequality,
+\[
+\Phi\left(\abs{\frac{S_n}{n}}\right)
+\leq
+\Phi\left(\frac1n\sum_{i=1}^n\abs{X_i}\right)
+\leq
+\frac1n\sum_{i=1}^n\Phi(\abs{X_i}).
+\]
+Therefore
+\[
+\sup_n\bbE\Phi\left(\abs{\frac{S_n}{n}}\right)
+\leq\bbE\Phi(\abs{X_1})<\infty.
+\]
+Another application of the de la Vall\'ee--Poussin criterion shows that
+$\{S_n/n:n\geq1\}$ is uniformly integrable. The SLLN gives
+$S_n/n\to\mu$ a.s., hence in probability. Uniform integrability then
+upgrades this convergence to $L^1$:
+\[
+\boxed{
+\bbE\abs{\frac{S_n}{n}-\mu}\longrightarrow0.}
+\]
+
+\section{The Empirical Distribution Function at a Fixed Point}
+
+\begin{enumerate}
+\item Put $I_i(x)=\ind\{X_i\leq x\}$. Then the $I_i(x)$ are i.i.d.
+Bernoulli$(F(x))$, so
+\[
+\bbE[\widehat F_n(x)]=F(x),
+\qquad
+\Var(\widehat F_n(x))
+=\frac{F(x)(1-F(x))}{n}.
+\]
+
+\item For each fixed $x$, the SLLN applied to $I_i(x)$ gives
+\[
+\widehat F_n(x)=\frac1n\sum_{i=1}^nI_i(x)\longrightarrow F(x)
+\qquad\text{a.s.}
+\]
+
+\item Independence across sample indices implies
+\[
+\Cov(\widehat F_n(x),\widehat F_n(y))
+=\frac1n\Cov(I_1(x),I_1(y)).
+\]
+Since $I_1(x)I_1(y)=I_1(x\wedge y)$,
+\[
+\boxed{
+\Cov(\widehat F_n(x),\widehat F_n(y))
+=\frac{F(x\wedge y)-F(x)F(y)}{n}.}
+\]
+
+\item Pointwise convergence controls each predetermined $x$, while the
+supremum ranges over an uncountable set and its maximizing point may depend
+on the sample and on $n$. Thus pointwise convergence alone does not imply
+uniform convergence; an additional argument exploiting monotonicity or
+empirical-process bounds is required.
+\end{enumerate}
+
+\section{A Uniform Law over a Finite Class}
+
+\begin{enumerate}
+\item For fixed $f$, the variables $f(X_i)$ are independent and lie in
+$[0,1]$. Hoeffding's inequality gives
+\[
+\bbP(\abs{P_nf-Pf}>\varepsilon)
+\leq2e^{-2n\varepsilon^2}.
+\]
+
+\item By the union bound,
+\[
+\begin{aligned}
+\bbP\left(\sup_{f\in\mathcal F}\abs{P_nf-Pf}>\varepsilon\right)
+&\leq\sum_{j=1}^M
+\bbP(\abs{P_nf_j-Pf_j}>\varepsilon)\\
+&\leq2Me^{-2n\varepsilon^2}.
+\end{aligned}
+\]
+
+\item Set the last display equal to $\delta$. Solving for
+$\varepsilon$ gives, with probability at least $1-\delta$,
+\[
+\boxed{
+\sup_{f\in\mathcal F}\abs{P_nf-Pf}
+\leq\sqrt{\frac{\log(2M/\delta)}{2n}}.}
+\]
+
+\item For each fixed $\varepsilon>0$,
+\[
+\bbP\left(\sup_{f\in\mathcal F_n}\abs{P_nf-Pf}>\varepsilon\right)
+\leq2\exp\{\log M_n-2n\varepsilon^2\}.
+\]
+This tends to zero whenever
+\[
+\boxed{\log M_n=o(n).}
+\]
+Thus this condition guarantees convergence in probability.
+\end{enumerate}
+
+\section{Rademacher Complexity and Uniform Convergence}
+
+Write $P_n'f=n^{-1}\sum_{i=1}^nf(X_i')$.
+
+\begin{enumerate}
+\item Since $Pf=\bbE[P_n'f\mid X_1,\ldots,X_n]$, conditional Jensen's
+inequality gives
+\[
+\begin{aligned}
+\sup_{f\in\mathcal F}\abs{P_nf-Pf}
+&\leq
+\bbE\left[
+\sup_{f\in\mathcal F}\abs{P_nf-P_n'f}
+\,\middle|\,X_1,\ldots,X_n
+\right].
+\end{aligned}
+\]
+Taking expectation proves the claim.
+
+\item Put $\mathcal F_{\pm}=\mathcal F\cup(-\mathcal F)$. Then
+\[
+\sup_{f\in\mathcal F}\abs{(P_n-P_n')f}
+=\sup_{f\in\mathcal F_{\pm}}(P_n-P_n')f.
+\]
+The joint distribution is unchanged when each pair $(X_i,X_i')$ is
+swapped according to an independent Rademacher sign. Hence
+\[
+\begin{aligned}
+\bbE\sup_{f\in\mathcal F_{\pm}}(P_n-P_n')f
+&=\bbE\sup_{f\in\mathcal F_{\pm}}
+\frac1n\sum_{i=1}^n\varepsilon_i(f(X_i)-f(X_i'))\\
+&\leq
+\bbE\sup_{f\in\mathcal F_{\pm}}\frac1n\sum_{i=1}^n\varepsilon_if(X_i)
++\bbE\sup_{f\in\mathcal F_{\pm}}\frac1n\sum_{i=1}^n(-\varepsilon_i)f(X_i')\\
+&=2\bbE[\widehat{\mathfrak R}_n(\mathcal F_{\pm})].
+\end{aligned}
+\]
+
+\item Conditional on the data, independence of the signs and
+$\cosh u\leq e^{u^2/2}$ give
+\[
+\begin{aligned}
+\bbE_\varepsilon\exp\left\{
+\lambda\sum_{i=1}^n\varepsilon_if_j(X_i)\right\}
+&=\prod_{i=1}^n\cosh(\lambda f_j(X_i))\\
+&\leq\exp\left\{\frac{\lambda^2}{2}
+\sum_{i=1}^nf_j(X_i)^2\right\}.
+\end{aligned}
+\]
+
+\item Let
+$R=\max_j(\sum_i f_j(X_i)^2)^{1/2}$. For every $\lambda>0$,
+\[
+\begin{aligned}
+\bbE_\varepsilon\max_{1\leq j\leq M}
+\sum_{i=1}^n\varepsilon_if_j(X_i)
+&\leq\frac1\lambda
+\log\sum_{j=1}^M
+\bbE_\varepsilon e^{\lambda\sum_i\varepsilon_if_j(X_i)}\\
+&\leq\frac{\log M}{\lambda}+\frac{\lambda R^2}{2}.
+\end{aligned}
+\]
+Optimizing at $\lambda=\sqrt{2\log M}/R$ and dividing by $n$ yields
+\[
+\widehat{\mathfrak R}_n(\mathcal F)
+\leq\frac{R\sqrt{2\log M}}{n}.
+\]
+Since $0\leq f_j\leq1$, $R\leq\sqrt n$, and therefore
+\[
+\widehat{\mathfrak R}_n(\mathcal F)
+\leq\sqrt{\frac{2\log M}{n}}.
+\]
+
+\item The class $\mathcal F_{\pm}$ has at most $2M$ elements and all
+its functions have absolute value at most one. Parts 2 and 4 give
+\[
+\boxed{
+\bbE\sup_{f\in\mathcal F}\abs{P_nf-Pf}
+\leq2\sqrt{\frac{2\log(2M)}{n}}.}
+\]
+
+\item Define
+\[
+Z(X_1,\ldots,X_n)=\sup_{f\in\mathcal F}\abs{P_nf-Pf}.
+\]
+Replacing one observation changes every $P_nf$ by at most $1/n$, and
+hence changes (Z) by at most (1/n). McDiarmid's inequality gives
+\[
+\bbP(Z-\bbE Z>t)\leq e^{-2nt^2}.
+\]
+Taking $t=\sqrt{\log(1/\delta)/(2n)}$ and using part 5 proves that, with
+probability at least $1-\delta$,
+\[
+\boxed{
+Z\leq
+2\sqrt{\frac{2\log(2M)}{n}}
++\sqrt{\frac{\log(1/\delta)}{2n}}.}
+\]
+Rademacher complexity measures how well a class can correlate with random
+signs on the observed sample. A richer class can fit these signs more
+closely and has larger complexity; a smaller complexity therefore yields a
+tighter uniform deviation bound.
+\end{enumerate}
+
+\end{document}
