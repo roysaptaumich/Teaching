@@ -10,7 +10,7 @@ title: SDS 8102 - Advanced Mathematical Statistics
 Statistics and Data Science Program\
 Mohamed bin Zayed University of Artificial Intelligence
 
-**Instructor:** Qiang Sun and Saptarshi Roy
+**Instructor:** Saptarshi Roy, Qiang Sun and Alexandre Tsybakov
 
 **Teaching Assistant:** Ziyun Zhou
 
