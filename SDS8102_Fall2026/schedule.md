@@ -11,12 +11,12 @@ The course will roughly follow the following teaching plan:
 | **6** | Sep. 28–Oct. 2 | Empirical Processes; Glivenko–Cantelli Classes and Theorem; Donsker Classes; Chaining Argument | |
 | **7** | Oct. 5–9 | Asymptotic Properties of Estimators; Consistency of M/Z Estimators; Applications to MLE | |
 | **—** | **Oct. 12–16** | **No classes** | **Midterm Week**; Fall Break: Oct. 15–16 |
-| **8** | Oct. 19–23 | Efficiency of Statistical Tests; Asymptotic Power Function; Asymptotic Relative Efficiency (ARE); Asymptotically Uniformly Most Powerful Tests; Asymptotic Representation Theorem; Local Asymptotic Normality; Wald's and Rao's Large-Sample Tests | **HW3 due** |
+| **8** | Oct. 19–23 | Efficiency of Statistical Tests; Asymptotic Power Function; Asymptotic Relative Efficiency (ARE); Asymptotically Uniformly Most Powerful Tests; Asymptotic Representation Theorem; Local Asymptotic Normality; Wald's and Rao's Large-Sample Tests | **HW3 out: Oct. 23, 12:00 AM** |
 | **9** | Oct. 26–30 | Goodness-of-Fit Tests; Kolmogorov–Smirnov Test & Extensions; Pearson's Chi-Squared Test; Neyman's Smooth Test | **No class Oct. 29** (Research Showcase) |
-| **10** | Nov. 2–6 | [Topic 10] | |
+| **10** | Nov. 2–6 | [Topic 10] | **HW3 due: Nov. 6, 11:59 PM**; **HW4 out: week of Nov. 2–6** |
 | **11** | Nov. 9–13 | [Topic 11] | |
-| **12** | Nov. 16–20 | [Topic 12] | **HW4 due** |
-| **13** | Nov. 23–27 | [Topic 13] | |
+| **12** | Nov. 16–20 | [Topic 12] |  |
+| **13** | Nov. 23–27 | [Topic 13] | **HW4 due: week of Nov. 23–27** |
 | **14** | Nov. 30–Dec. 4 | [Topic 14] | **No class Dec. 1** (UAE National Day) |
 | **15** | Dec. 7–11 | Review / Problem Practice | Last day of classes: Dec. 10 |
 | **16** | Dec. 15 | **Final Exam** | |
