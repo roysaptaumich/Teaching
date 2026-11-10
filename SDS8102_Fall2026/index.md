@@ -10,7 +10,7 @@ title: SDS 8102 - Advanced Mathematical Statistics
 Statistics and Data Science Program\
 Mohamed bin Zayed University of Artificial Intelligence
 
-**Instructor:** Qiang Sun and Saptarshi Roy
+**Instructor:** Saptarshi Roy, Qiang Sun and Alexandre Tsybakov
 
 **Teaching Assistant:** Ziyun Zhou
 
@@ -48,12 +48,12 @@ The course will roughly adhere to the following teaching plan:
 | **6** | Sep. 28–Oct. 2 | Empirical Processes; Glivenko–Cantelli Classes and Theorem; Donsker Classes; Chaining Argument | | [EMP_notes](Notes/Week6/Empirical_process_notes.pdf); [Notes1](Notes/Week6/Notes1.pdf) |
 | **7** | Oct. 5–9 | Asymptotic Properties of Estimators; Consistency of M/Z Estimators; Applications to MLE |  | [Notes1](Notes/Week7/Notes1.pdf) |
 | **—** | **Oct. 12–16** | **Oct 13: Mid-term exam (Syllabus: Upto Week 6)**  | **Midterm Week**; Fall Break: Oct. 15–16 | |
-| **8** | Oct. 19–23 | Efficiency of Statistical Tests; Asymptotic Power Function; Asymptotic Relative Efficiency (ARE); Asymptotically Uniformly Most Powerful Tests; Asymptotic Representation Theorem; Local Asymptotic Normality; Wald's and Rao's Large-Sample Tests | **HW3 due** | [Slides](Notes/Week9/SDS8102_Week9_Student.pdf); [Notes](Notes/Week9/SDS8102_Week9_Notes.pdf) |
-| **9** | Oct. 26–30 | Goodness-of-Fit Tests; Kolmogorov–Smirnov Test & Extensions; Pearson's Chi-Squared Test; Neyman's Smooth Test | **No class Oct. 29** (Research Showcase) | TBD |
-| **10** | Nov. 2–6 | Bootsrap and Sub-sampling; Permutation and Randomization test; Asymptotic results; Basic large sample approximations; Bootstrap sampling distributions; Higher-order correctness | | TBD |
-| **11** | Nov. 9–13 | Non-parametric Statistics: Kernel density estimation;  Mean-squared error of kernel estimators; Lack of asymptotic optimality; Fourier analysis of KDE | | [Notes](Notes/Week11/Nonparametric_Estimation_Notes1.pdf) |
-| **12** | Nov. 16–20 | Non-parametric regression: The Nadaraya-Watson estimator; Local polynomial estimators: Pointwise and integrated risk of local polynomial estimators; Convergence in sup-norm; Sobolev Classes  | **HW4 due** | TBD |
-| **13** | Nov. 23–27 | Lower bound on minimax risk 1: Introduction; general reduction scheme; Lower bound based on two hypotheses; Bound based on distances between probability measures | | TBD |
+| **8** | Oct. 19–23 | Efficiency of Statistical Tests; Asymptotic Power Function; Asymptotic Relative Efficiency (ARE); Asymptotically Uniformly Most Powerful Tests; Asymptotic Representation Theorem; Local Asymptotic Normality; Wald's and Rao's Large-Sample Tests | **HW3 out** | [Slides](Notes/Week9/SDS8102_Week9_Student.pdf); [Notes](Notes/Week9/SDS8102_Week9_Notes.pdf) |
+| **9** | Oct. 26–30 | Goodness-of-Fit Tests; Kolmogorov–Smirnov Test & Extensions; Pearson's Chi-Squared Test; Neyman's Smooth Test | **No class Oct. 29** (Research Showcase) | [Notes](Notes/Week10/SDS8102_Week10_Notes.pdf)  |
+| **10** | Nov. 2–6 | Bootsrap and Sub-sampling; Permutation and Randomization test; Asymptotic results; Basic large sample approximations; Bootstrap sampling distributions; Higher-order correctness | **HW3 due** | [Notes](Notes/Week11/SDS8102_Week11_Notes.pdf) |
+| **11** | Nov. 9–13 | Non-parametric Statistics: Kernel density estimation;  Mean-squared error of kernel estimators; Lack of asymptotic optimality; Fourier analysis of KDE | **HW4 out** | [Notes](Notes/Week11/Nonparametric_Estimation_Notes1.pdf) |
+| **12** | Nov. 16–20 | Non-parametric regression: The Nadaraya-Watson estimator; Local polynomial estimators: Pointwise and integrated risk of local polynomial estimators; Convergence in sup-norm; Sobolev Classes  |  | TBD |
+| **13** | Nov. 23–27 | Lower bound on minimax risk 1: Introduction; general reduction scheme; Lower bound based on two hypotheses; Bound based on distances between probability measures | **HW4 due** | TBD |
 | **14** | Nov. 30–Dec. 4 | Lower bound on minimax risk 2: Bounds based on many hypotheses; Lower bounds in L2; Lower bounds on sup-norm; Other tools for minimax lower bound: Fano's lemma, Assouad's lemma, The van Trees inequality; The method of two fuzzy hypotheses; Lower bounds for quadratic functionals | **No class Dec. 1** (UAE National Day) | TBD |
 | **15** | Dec. 7–11 | Review / Problem Practice | **Last day of classes:** Dec. 10 | TBD |
 | **16** | Dec. 15 | **Final Exam** | | TBD |
